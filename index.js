@@ -37,7 +37,7 @@ function attack() {
     } else if (monster.dead && monstersArray.length) {
         attackBtn.style.display = "none";
         monster = getNewMonster();
-        wizard.diceArray = getDicePlaceholderHtml(wizard.diceCount);
+        wizard.diceHtml = getDicePlaceholderHtml(wizard.diceCount);
         setTimeout(() => {
             attackBtn.style.display = "block";
             render();
